@@ -1,0 +1,53 @@
+*{
+    --background: #b2b6b8;
+}
+.line{
+    height:80%;
+    width:2px;
+    background: red;
+   position: relative;
+   margin-left:6px;
+}
+p{
+    font-family: 'Fredoka One', cursive;
+}
+ion-card-title{
+    font-family: 'Nerko One', cursive;
+}
+ion-card-subtitle{
+    font-family: 'Luckiest Guy', cursive;
+}
+h1{
+    font-family: 'Concert One', cursive;   
+}
+ion-title{
+    font-family: 'Bowlby One SC', cursive;
+}
+ion-label{
+    font-family: 'Nerko One', cursive;
+}
+
+.services{
+    ion-col{
+        ion-card{
+            ion-card-content,h1,p{
+                margin: auto;
+                display: block;
+                text-align: center;
+                margin:20px;
+            }
+            ion-thumbnail{
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+.styles{
+    font-family: 'Bowlby One SC', cursive;
+  font-family: 'Concert One', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Nerko One', cursive;
+  }

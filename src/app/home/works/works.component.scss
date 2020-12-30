@@ -1,0 +1,54 @@
+
+ion-slides{
+    ion-slide{
+     
+    }
+    --bullet-background:rgb(192, 10, 10) !important;
+    // --scroll-bar-background:red;
+ 
+}
+*{
+    padding:0;
+    margin:0;
+    --background:  #b2b6b8;
+    
+  }
+  ion-img{
+      height:20vh;
+  }
+  ion-buttons{
+      margin:auto;
+      display: block;
+  }
+ 
+  #maincard ion-card-content{
+    height:75vh;
+    ion-row{
+        ion-col{
+            ion-card{
+                height:30vh;
+              ion-card-content{
+              
+              }
+            }
+        }
+    }
+
+  }
+p{
+    font-family: 'Concert One', cursive;
+}
+ion-card-title , ion-title,h1{
+    font-family: 'Nerko One', cursive;
+    font-size:30px;
+}
+ion-card-subtitle{
+    font-family: 'Luckiest Guy', cursive;
+}
+  .styles{
+    font-family: 'Bowlby One SC', cursive;
+  font-family: 'Concert One', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Nerko One', cursive;
+  }

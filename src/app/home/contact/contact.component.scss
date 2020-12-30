@@ -1,0 +1,58 @@
+
+
+
+ion-card-title{
+    font-family: 'Fredoka One', cursive;
+}
+ion-card-subtitle{
+    font-family: 'Luckiest Guy', cursive; 
+}
+ion-item{
+   
+    ion-label{
+        padding-left:20px;
+        font-family: 'Fredoka One', cursive;
+    }
+}
+*{
+    --background:  #b2b6b8;
+  }
+  form{
+    ion-item{
+        width:100%;
+        margin:10px;
+        border-radius: 10px;
+        padding:5px;
+     
+     
+        box-shadow: inset 5px 5px 9px #a4adb2, 
+                    inset -5px -5px 9px #e8f5fc;
+                    ion-input{
+                
+                    }
+    }
+  }
+  
+ ion-buttons{
+     margin:auto;
+     display: block;
+ }
+
+ion-button{
+  
+    border-radius: 5px;
+  background: #b2b6b8;
+  box-shadow:  5px 5px 10px #7e8183, 
+               -5px -5px 10px #e6ebed;
+              color:black;
+              margin-left: 10px;
+  }
+
+
+.styles{
+    font-family: 'Bowlby One SC', cursive;
+  font-family: 'Concert One', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Nerko One', cursive;
+  }
