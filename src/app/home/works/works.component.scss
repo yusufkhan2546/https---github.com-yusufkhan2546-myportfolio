@@ -1,5 +1,5 @@
 ion-grid{
- margin-left:10vw;
+
 }
 ion-slides{
   width:100vw;
@@ -27,6 +27,7 @@ ion-slides{
   #maincard ion-card-content{
     height:75vh;
     ion-row{
+    
         ion-col{
             ion-card{
                 height:30vh;
@@ -41,6 +42,14 @@ ion-slides{
 p{
     font-family: 'Concert One', cursive;
 }
+
+
+#headerrow{
+  margin: auto;
+  display: block;
+  text-align: center;
+ 
+}
 ion-card-title , ion-title,h1{
     font-family: 'Nerko One', cursive;
     font-size:30px;
@@ -54,4 +63,35 @@ ion-card-subtitle{
   font-family: 'Fredoka One', cursive;
   font-family: 'Luckiest Guy', cursive;
   font-family: 'Nerko One', cursive;
+  }
+  @media only screen and (max-width: 600px) {
+
+ion-card-title{
+  font-family: 'Nerko One', cursive;
+  font-size:15px;
+  margin:auto;
+  display: block;
+} 
+ion-title,
+h1{
+  font-family: 'Nerko One', cursive;
+  font-size:15px;
+}
+
+
+#maincard ion-card-content{
+  height:80vh;
+  ion-row{
+      ion-col{
+          ion-card{
+             
+            ion-card-content{
+              height:30vh;
+            }
+          }
+      }
+  }
+
+}
+
   }

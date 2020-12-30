@@ -1,7 +1,7 @@
 <ion-content>
   <ion-grid fixed>
     <ion-row>
-      <ion-col size="6">
+      <ion-col size-md="6" size-xs="12">
         <ion-card>
           <ion-card-header>
             <ion-card-subtitle>Contact</ion-card-subtitle>
@@ -43,35 +43,40 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6">
-        <form [formGroup]="contactForm">
-          <ion-item lines="none">
-            <ion-icon name="happy-outline" *ngIf="Name()"  slot="end"></ion-icon>
-            <ion-icon name="sad-outline" class="sadicon" *ngIf="!Name()" slot="end"></ion-icon>
-            <ion-label position="fixed">Name:</ion-label>
-            <ion-input (keyup)="nameFun()" clearInput inputmode="text" formControlName="name"></ion-input>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-icon name="happy-outline" *ngIf="Email()" slot="end"></ion-icon>
-            <ion-icon name="sad-outline" class="sadicon" *ngIf="!Email()" slot="end"></ion-icon>
-            <ion-label  position="fixed">Email:</ion-label>
-            <ion-input (keyup)="Email()" clearInput inputmode="email" formControlName="email"></ion-input>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-icon name="happy-outline" *ngIf="Phone()" slot="end"></ion-icon>
-            <ion-icon name="sad-outline" class="sadicon" *ngIf="!Phone()" slot="end"></ion-icon>
-            <ion-label  position="fixed">Phone:</ion-label>
-            <ion-input (keyup)="Phone()" clearInput inputmode="tel" formControlName="phone"></ion-input>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-icon name="happy-outline" *ngIf="Description()" slot="end"></ion-icon>
-            <ion-icon name="sad-outline" class="sadicon" *ngIf="!Description()" slot="end"></ion-icon>
-            <ion-label>Description:</ion-label>
-            <ion-textarea (keyup)="Description()" inputmode="text" formControlName="description" clearInput></ion-textarea>
-          </ion-item>
-        </form>
-    
-          <ion-button expand="block" (click)="submitEnquiry()" >Submit</ion-button>
+      <ion-col size-md="6" size-xs="12">
+        <ion-card>
+          <ion-card-content>
+            <form [formGroup]="contactForm">
+              <ion-item lines="none">
+                <ion-icon name="happy-outline" *ngIf="Name()"  slot="end"></ion-icon>
+                <ion-icon name="sad-outline" class="sadicon" *ngIf="!Name()" slot="end"></ion-icon>
+                <ion-label position="fixed">Name:</ion-label>
+                <ion-input (keyup)="nameFun()" clearInput inputmode="text" formControlName="name"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="happy-outline" *ngIf="Email()" slot="end"></ion-icon>
+                <ion-icon name="sad-outline" class="sadicon" *ngIf="!Email()" slot="end"></ion-icon>
+                <ion-label  position="fixed">Email:</ion-label>
+                <ion-input (keyup)="Email()" clearInput inputmode="email" formControlName="email"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="happy-outline" *ngIf="Phone()" slot="end"></ion-icon>
+                <ion-icon name="sad-outline" class="sadicon" *ngIf="!Phone()" slot="end"></ion-icon>
+                <ion-label  position="fixed">Phone:</ion-label>
+                <ion-input (keyup)="Phone()" clearInput inputmode="tel" formControlName="phone"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="happy-outline" *ngIf="Description()" slot="end"></ion-icon>
+                <ion-icon name="sad-outline" class="sadicon" *ngIf="!Description()" slot="end"></ion-icon>
+                <ion-label>Description:</ion-label>
+                <ion-textarea (keyup)="Description()" inputmode="text" formControlName="description" clearInput></ion-textarea>
+              </ion-item>
+            </form>
+        
+              <ion-button expand="block" (click)="submitEnquiry()" >Submit</ion-button>
+          </ion-card-content>
+        </ion-card>
+        
      
       </ion-col>
     </ion-row>
