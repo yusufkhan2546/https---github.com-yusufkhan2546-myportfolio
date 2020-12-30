@@ -2,7 +2,7 @@
   <ion-toolbar >
     <ion-item lines="none">
       <ion-title slot="start">PortFolio</ion-title>
-      <ion-segment (ionChange)="segmentChanged($event)" *ngIf="!device">
+      <ion-segment id="segment" #segment (ionChange)="segmentChanged($event)" *ngIf="!device">
         <ion-segment-button value="home">
           <ion-label>Home</ion-label>
         </ion-segment-button>

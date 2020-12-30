@@ -44,27 +44,34 @@
         </ion-card>
       </ion-col>
       <ion-col size="6">
-        <form>
+        <form [formGroup]="contactForm">
           <ion-item lines="none">
+            <ion-icon name="happy-outline" *ngIf="Name()" slot="end"></ion-icon>
+            <ion-icon name="sad-outline" *ngIf="!Name()" slot="end"></ion-icon>
             <ion-label position="fixed">Name:</ion-label>
-            <ion-input></ion-input>
+            <ion-input (keyup)="nameFun()" clearInput inputmode="text" formControlName="name"></ion-input>
           </ion-item>
-
           <ion-item lines="none">
+            <ion-icon name="happy-outline" *ngIf="Email()" slot="end"></ion-icon>
+            <ion-icon name="sad-outline" *ngIf="!Email()" slot="end"></ion-icon>
             <ion-label  position="fixed">Email:</ion-label>
-            <ion-input></ion-input>
+            <ion-input (keyup)="Email()" clearInput inputmode="email" formControlName="email"></ion-input>
           </ion-item>
           <ion-item lines="none">
+            <ion-icon name="happy-outline" *ngIf="Phone()" slot="end"></ion-icon>
+            <ion-icon name="sad-outline" *ngIf="!Phone()" slot="end"></ion-icon>
             <ion-label  position="fixed">Phone:</ion-label>
-            <ion-input></ion-input>
+            <ion-input (keyup)="Phone()" clearInput inputmode="tel" formControlName="phone"></ion-input>
           </ion-item>
           <ion-item lines="none">
+            <ion-icon name="happy-outline" *ngIf="Description()" slot="end"></ion-icon>
+            <ion-icon name="sad-outline" *ngIf="!Description()" slot="end"></ion-icon>
             <ion-label>Description:</ion-label>
-            <ion-textarea></ion-textarea>
+            <ion-textarea (keyup)="Description()" inputmode="text" formControlName="description" clearInput></ion-textarea>
           </ion-item>
         </form>
     
-          <ion-button expand="block" >Submit</ion-button>
+          <ion-button expand="block" (click)="submitEnquiry()" >Submit</ion-button>
      
       </ion-col>
     </ion-row>
